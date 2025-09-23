@@ -10,7 +10,8 @@ import { CommonModule } from "@angular/common";
 export class Banner {
 
   status = true;
-  name = 'Teste name'
+  name = 'Teste name';
+ 
 
   updateStatus(value: boolean){
     this.status = value

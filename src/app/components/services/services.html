@@ -1,1 +1,18 @@
-<p>services works!</p>
+<p>services worksas!</p>
+<p>
+    Loop
+</p>
+<p>
+    Primeira forma
+</p>
+@for (item of list_items; track item) {
+    <p>
+        {{item}}
+    </p>
+}
+
+<p>
+    Segunda forma
+</p>
+
+<div *ngFor="let item of list_items">{{item}}</div>
