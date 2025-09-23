@@ -15,4 +15,14 @@
     Segunda forma
 </p>
 
+
 <div *ngFor="let item of list_items">{{item}}</div>
+
+
+<p>
+   Two-way binding 
+</p>
+
+<input [(ngModel)] = "name"/>
+
+<button (click)="getName()">Update</button>
