@@ -2,3 +2,28 @@
 <button (click) = "updateName('Marinho')">
     {{name}}
 </button>
+<div>
+    <span>
+        titulo
+    </span>
+    <p>
+        Primeira forma
+    </p>
+    @if (status) {
+        <h1>
+            Titulo
+        </h1>
+    }@else {
+        <h1>
+            Hidden title
+        </h1>
+    }
+    <p>
+        Segunda forma
+    </p>
+
+    <h1 *ngIf="status">Titulo</h1>
+</div>
+<button (click)="updateStatus(!status)">
+    {{!status?'Mostrar':'Ocultar'}} titulo
+</button>
