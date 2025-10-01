@@ -1,0 +1,12 @@
+<p>flow works!</p>
+<p>
+    Loop For
+</p>
+
+<ul>
+    @for (user of users; track user.id){
+        <li [style.color]="user.id>1? 'red': 'black'">
+            <span>[{{user.id}}] =></span> <span>{{user.name}}</span> 
+        </li>
+    }
+</ul>

@@ -1,0 +1,3 @@
+<p>con-between-com works!</p>
+<button (click)="setMsgSend()">Change message</button>
+<app-child-component [msg_receiver]="msg_send" (msg_send_father)="getMsg($event)"></app-child-component>

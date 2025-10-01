@@ -1,0 +1,40 @@
+<p>condicionals works!</p>
+<h1>
+    Ifs
+</h1>
+
+@if (condincionals_variables=='1') {
+    <p>
+        Condição: {{condincionals_variables}}
+    </p>
+}@else if (condincionals_variables=='2') {
+    <p>
+        Condição: {{condincionals_variables}}
+    </p>
+}@else {
+    <p>
+        Condição: {{condincionals_variables}}
+    </p>
+}
+
+<h1>
+    Swiths
+</h1>
+
+@switch (condincionals_variables) {
+    @case ('1') {
+        <p>
+            Caso: {{condincionals_variables}}
+        </p>
+    }
+    @case ('2') {
+        <p>
+            Caso: {{condincionals_variables}}
+        </p>
+    }
+    @default {
+        <p>
+            Caso: {{condincionals_variables}}
+        </p>
+    }
+}
